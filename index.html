@@ -1,0 +1,57 @@
+<html>
+<head>
+  
+<title>Result sheet</title> 
+<link rel="stylesheet" href="index.css">
+
+ </head>
+<body>
+  <div class="Container">
+ <div class="Result-text">
+    enter the name of student:<br>
+    <input type="text" name="name" placeholder="enter a name " id="name">
+    <br>
+    <label for="english">english</label>
+    <input type="radio" name="subject" id="english" value="english"><br>
+    <label for="maths">maths</label>
+    <input type="radio" name="subject" id="maths" value="maths"><br>
+    <label for="phy">phy</label>
+    <input type="radio" name="subject" id="phy" value="phy"><br>
+    <label for="chem">chem</label>
+   <input type="checkbox" !--name="subject" id="chem" value="chem"><br>
+    <label for="computer">computer</label>
+    <input type="radio" name="subject" id="computer" value="computer"><br>
+    <br>
+    total marks:<br>
+    <input type="text" name="marks" placeholder="enter total marks" id="total"><br>
+    obtain marks :<br>
+    <input type="text" name="marks" placeholder="enter obtain marks" id="marks"><br>     
+    <button  onclick="myFunction()" id="myBtn">submit</button>
+    
+    
+    <br>
+    average:<br>
+    <input type="text" name="marks" placeholder="average marks of table" id="avgmark"> <br>
+
+
+    <button onclick="avgfun()" id="myavg">average</button>
+    <br>
+    
+
+    
+    <script src="index.js"></script>
+
+<h1> Marks Sheet</h1>
+<table  width=100%; id="stu_data">
+
+  <tr>
+    <td>name</td>
+    <td>sub</td>
+    <td>marks</td>
+  </tr>
+
+</table>
+</div>
+</div>
+</body>
+</html>
